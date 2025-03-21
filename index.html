@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Timeless Bharat-Explore India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+  }
+
+  .logo {
+    width: 300px;
+    cursor: pointer;
+  }
+
+  .nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+  }
+
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .register-btn {
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .register-btn:hover {
+    background-color: orange;
+  }
+
+  .container {
+    padding: 0 7%;
+  }
+
+  .header h2 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(https://plus.unsplash.com/premium_photo-1697730426227-9056296a0315?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    padding: 100px 20px;
+  }
+
+  /* Header Styles */
+  header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  header .logo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+  }
+
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+
+  nav ul li a:hover {
+    color: orange;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-image: url(spiderman.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 100px 20px;
+    color: #fff;
+  }
+
+  .hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+
+  /* Destinations Section */
+  #destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+
+  #destinations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .destination-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .destination {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .destination h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  /* Services Section */
+  #services {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  #services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  #services ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #services ul li {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+  }
+
+  #contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  button {
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  button:hover{
+    background-color: rgb(255, 111, 0);
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  form label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: black;
+    border-radius: 10px;
+  }
+
+  form button {
+    padding: 15px 30px;
+    background-color: gray;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+
+  footer {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <header>
+    <hr />
+    <h1>Tourism Guide</h1>
+    <p>Explore the India's best destinations</p>
+    <hr />
+  </header>
+  <div class="header">
+    <nav>
+      <img src="a.png" class="logo" alt="Transparent logo">
+      <ul>
+        <li><a href="http://127.0.0.1:5500/pp.html" class="pop">Popular places</a></li>
+        <li><a href="http://127.0.0.1:5500/tc.html">Terms & Conditions</a></li>
+        <li><a href="http://127.0.0.1:5500/op.html">Online Packeges</a></li>
+      </ul>
+      <a href="#" class="register-btn">Register Now</a>
+    </nav>
+    <div class="container">
+      <h2>Find your Next Stay</h2>
+      <div class="search-bar">
+        <form>
+          <div>
+            <label>Location</label>
+            <input type="text" placeholder="Where are you going?">
+          </div>
+          <div>
+            <label>Check in</label>
+            <input type="text" placeholder="Add Date">
+          </div>
+          <div>
+            <label>Check out</label>
+            <input type="text" placeholder="Add Date">
+          </div>
+          <div>
+            <label>Guest</label>
+            <input type="text" placeholder="Add Guest">
+          </div>
+          <button type="SUBMIT">SUBMIT</button>
+        </form>
+      </div>
+      <footer>
+        <p>&copy;2025 Guide. All Rights reserved</p>
+      </footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
